@@ -1,0 +1,65 @@
+/* Estilo base para o contaier de cards */
+.card-container {
+    display: grid; /* Usando grid para organizar os cards */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Espaço igual entre os cards na horizontal e vertical */
+    max-width: 1280px; /* Limite de largura do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+    margin-top: 50px;
+}
+
+
+/* Estilo base dos cards */
+.card {
+    background-color: #1e1e1e; /* Cor de fundo dos cards */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+    color: #c9d1d9; /* Cor do texto */
+    height: 200px;
+}
+
+/* Efeito hover nos cards */
+.card:hover {
+    background-color: #9745def8; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta a sombra */
+    transform: translateY(-5px); /* Move o card para cima */
+    cursor: pointer; 
+}
+
+/* Efeito de hover para os títulos (h3) dentro do card */
+.card h3 {
+    font-size: 22px; /* Tamanho do título */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+/* Efeito de hover para o título */
+.card:hover h3 {
+    color: #ffffff; /* Cor do título no hover */
+    transform: scale(1.05); /* Aumenta levemente o título */
+}
+
+/* Efeito para os parágrafos dentro do card */
+.card p {
+    font-size: 16px; /* Tamanho do texto */
+    margin: 10px 0; /* Margem superior e inferior */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+/* Efeito de hover para os parágrafos */
+.card:hover p {
+    color: #f0f0f0; /* Muda a cor do texto */
+}
+
+  
+/* Responsividade: 1 card por linha em telas menores ou iguais a 400px */
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
