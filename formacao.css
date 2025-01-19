@@ -2,58 +2,99 @@
 
 .timeline{
 	width:auto;
-	background-color:#072736;
-	color:#fff;
+	background-color:transparent;
+	color:#c9d1d9; 
 	padding:30px 20px;
-	box-shadow:0px 0px 10px rgba(0,0,0,.5);
-  margin-top: 50px;
+  	margin-top: 50px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .timeline ul{
 	list-style-type:none;
-	border-left:2px solid #094a68;
+	border-left:2px solid #c9d1d9; 
 	padding:10px 5px;
 }
+
+/* Estilo de cada item dentro da timeline */
 .timeline ul li{
-	padding:20px 20px;
-	position:relative;
-	cursor:pointer;
-	transition:.5s;
+    padding: 20px 20px;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+    background-color: #1e1e1e; /* Cor de fundo dos itens */
+    border-radius: 10px; /* Bordas arredondadas */
+    color: #c9d1d9; /* Cor do texto */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra suave */
+    flex-direction: column; /* Organiza os itens em coluna */
+    justify-content: space-between; /* Distribui o conteúdo entre o topo e o fundo */
+	margin-bottom: 20px;
 }
+
+/* Estilo para os spans dentro da timeline */
 .timeline ul li span{
-	display:inline-block;
-	background-color:#1685b8;
-	border-radius:25px;
-	padding:2px 5px;
-	font-size:15px;
-	text-align:center;
+    display: inline-block;
+    background-color: #374adef9;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-align: center;
+	font-weight: bold;
 }
+
+/* Estilo do título h3 dentro da timeline */
 .timeline ul li .content h3{
-	color:#34ace0;
-	font-size:17px;
-	padding-top:5px;
+    color: #374adef9;
+    font-size: 17px;
+    padding-top: 5px;
+    transition: color 0.3s ease; /* Transição suave para a cor */
+	font-weight: bold;
 }
+
 .timeline ul li .content p{
 	padding:5px 0px 15px 0px;
 	font-size:15px;
 }
+
 .timeline ul li:before{
 	position:absolute;
 	content:'';
 	width:10px;
 	height:10px;
-	background-color:#34ace0;
+	background-color: #374adef9;
 	border-radius:50%;
 	left:-11px;
 	top:28px;
 	transition:.5s;
 }
+/* Efeito de hover para os itens da timeline */
 .timeline ul li:hover{
-	background-color:#071f2a;
+    background-color: #9745def8; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta a sombra */
+    transform: translateY(-5px); /* Move o item para cima */
 }
+
+/* Efeito de hover para o título dentro do item */
+.timeline ul li:hover h3{
+    color: white; /* Cor do título ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o título */
+}
+
+/* Efeito de hover para o parágrafo dentro do item */
+.timeline ul li:hover p{
+    color: #f0f0f0; /* Muda a cor do texto ao passar o mouse */
+}
+
+.timeline ul li:hover{
+	background-color: #9745def8;
+}
+
 .timeline ul li:hover:before{
-	background-color:#0F0;
-	box-shadow:0px 0px 10px 2px #0F0;
+	background-color: #c9d1d9; 
+	box-shadow:0px 0px 10px 2px  #c9d1d9;
 }
+
+
 @media (max-width:300px){
 	.timeline{
 		width:100%;
