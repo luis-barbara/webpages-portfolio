@@ -165,7 +165,7 @@ header .home-button:hover {
     position: absolute;
     width: 100%;
     height: 100%; /* Definir altura igual à frente */
-    background-color: rgb(16, 15, 15); /* Cor de fundo do verso */
+    background-color:  #1e1e1e; /* Cor de fundo do verso */
     color: white;
     display: flex;
     flex-direction: column;
