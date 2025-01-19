@@ -38,7 +38,7 @@
     font-size: 22px; /* Tamanho do título */
     margin-top: 5px; /* Espaçamento inferior */
     transition: color 0.3s ease; /* Transição suave para a cor */
-    color: #374adef9;
+    color: #0d6efd;
 }
 
 
@@ -89,11 +89,11 @@
 /* Estilo do botão */
 .btn {
     display: inline-block;
-    padding: 5px 10px; /* Tamanho do botão */
+    padding: 10px 15px; /* Tamanho do botão */
     font-size: 14px; /* Tamanho do texto */
     font-weight: bold; /* Texto em negrito */
-    color: #c9d1d9; /* Cor do texto */
-    background-color: #374adef9;; /* Fundo transparente */
+    color: white; /* Cor do texto */
+    background-color: #0d6efd; 
     border-radius: 5px; /* Bordas arredondadas */
     text-decoration: none; /* Remove sublinhado */
     transition: all 0.3s ease; /* Transição suave para hover */
@@ -110,6 +110,7 @@
     cursor: pointer; /* Muda o cursor para indicar clicável */
     font-weight: bold; /* Texto em negrito */
     color: white; /* Cor do texto */
+    background-color: #1e1e1e
 }
 
 
