@@ -42,11 +42,6 @@
 	font-weight: bold;
 }
 
-.timeline ul li:hover span {
-    background-color: #1e1e1e;
-    color: white; /* Cor do texto dentro do span */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para a cor */
-}
 
 /* Estilo do título h3 dentro da timeline */
 .timeline ul li .content h3{
