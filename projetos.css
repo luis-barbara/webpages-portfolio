@@ -114,6 +114,51 @@
 }
 
 
+
+/* Estilo ajustado para telas menores que 900px */
+@media (max-width: 1250px) {
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card h4 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .card li {
+        font-size: 10px;
+    }
+}
+
+/* Estilo ajustado para telas menores que 900px */
+@media (max-width: 1000px) {
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card h4 {
+        font-size: 14px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .card li {
+        font-size: 10px;
+    }
+
+
+    .btn {
+        padding: 8px 10px; /* Tamanho do botão */
+        font-size: 10px; /* Tamanho do texto */
+    }
+}
+
 /* Responsividade: 1 card por linha em telas menores ou iguais a 400px */
 @media (max-width: 600px) {
     .card-container {

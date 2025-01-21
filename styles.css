@@ -300,3 +300,212 @@ footer a:hover {
     opacity: 0; /* Fica invisível no final */
     }
 }
+
+
+/* Estilo ajustado para telas menores que 900px */
+@media (max-width: 900px) {
+    .flip-card {
+        width: 600px; /* Reduz a largura do card */
+        height: 390px; /* Reduz a altura do card */
+    }
+
+    .flip-card-back {
+        padding: 15px; /* Reduz o padding */
+    }
+
+    .flip-card-back h2 {
+        font-size: 20px; /* Reduz o tamanho da fonte do título */
+        margin-top: 15px; /* Ajusta o espaçamento superior */
+    }
+
+
+    .flip-card-back li {
+        font-size: 16px; /* Reduz o tamanho da fonte dos itens da lista */
+        line-height: 1.4; /* Ajusta o espaçamento entre linhas */
+        margin-bottom: 8px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .flip-card-back p {
+        font-size: 14px; /* Reduz o tamanho da fonte do parágrafo */
+        margin-top: 20px; /* Ajusta o espaçamento superior */
+    }
+}
+
+
+@media (max-width: 650px) {
+    .flip-card {
+        width: 400px; /* Reduz ainda mais a largura do card */
+        height: 260px; /* Reduz a altura do card */
+    }
+
+    .flip-card-back {
+        padding: 10px; /* Reduz ainda mais o padding */
+    }
+
+    .flip-card-back h2 {
+        font-size: 14px; /* Diminui o tamanho da fonte do título */
+        margin-top: 8px; /* Reduz o espaçamento superior */
+    }
+
+    .flip-card-back li {
+        font-size: 10px; /* Diminui o tamanho da fonte dos itens da lista */
+        line-height: 1.2; /* Ajusta o espaçamento entre linhas */
+        margin-bottom: 5px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .flip-card-back p {
+        font-size: 11px; /* Diminui o tamanho da fonte do parágrafo */
+        margin-top: 12px; /* Ajusta o espaçamento superior */
+    }
+
+
+    .text h1 {
+        font-size: 60px;
+    }
+
+    .text h1 .developer {
+        font-size: 60px;
+    }
+
+    .subtitles {
+        font-size: 14px;
+    }
+    
+    .subtitles span {
+        font-size: 16px; 
+    }
+
+    .tech-icons .icon {
+        font-size: 30px; /* Tamanho dos ícones */
+    }
+
+    .social-icons .icon {
+        font-size: 30px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+    
+    footer a {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .flip-card {
+        width: 300px; /* Reduz ainda mais a largura do card */
+        height: 195px; /* Reduz a altura do card */
+    }
+
+    .flip-card-back {
+        padding: 4px; /* Reduz ainda mais o padding */
+    }
+
+    .flip-card-back h2 {
+        font-size: 8px; /* Diminui o tamanho da fonte do título */
+        margin-top: 4px; /* Reduz o espaçamento superior */
+    }
+
+    .flip-card-back li {
+        font-size: 8px; /* Diminui o tamanho da fonte dos itens da lista */
+        line-height: 1.2; /* Ajusta o espaçamento entre linhas */
+        margin-bottom: 4px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .flip-card-back p {
+        font-size: 8px; /* Diminui o tamanho da fonte do parágrafo */
+        margin-top: 4px; /* Ajusta o espaçamento superior */
+    }
+
+
+    .text h1 {
+        font-size: 30px;
+    }
+
+    .text h1 .developer {
+        font-size: 30px;
+    }
+
+    .subtitles {
+        font-size: 10px;
+    }
+    
+    .subtitles span {
+        font-size: 10px;
+    }
+
+    .tech-icons .icon {
+        font-size: 30px; /* Tamanho dos ícones */
+    }
+
+    .social-icons .icon {
+        font-size: 30px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+    
+    footer a {
+        font-size: 10px;
+    }
+
+    .navbar nav {
+        font-size: 10px;
+    }
+    
+    .navbar nav a {
+        font-size: 10px;
+    }
+    
+    header .home-button {
+        font-size: 12px;
+    }
+
+    
+    footer p {
+        font-size: 8px;
+    }
+    
+    footer a {
+        font-size: 8px;
+    }
+
+    footer .separator {
+        font-size: 8px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .subtitles {
+        font-size: 10px;
+    }
+    
+    .subtitles span {
+        font-size: 10px;
+    }
+
+    .tech-icons .icon {
+        font-size: 20px; /* Tamanho dos ícones */
+    }
+
+    .social-icons .icon {
+        font-size: 20px;
+    }
+
+    .navbar nav {
+        gap: 0px;
+    }
+
+    .subtitles span { 
+        margin: 0px;
+    }
+
+    .subtitles {
+        margin-top: 20px;
+    }
+}
