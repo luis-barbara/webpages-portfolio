@@ -1,10 +1,10 @@
 /* Estilo base para o contaier de cards */
 .card-container {
-    display: grid; /* Usando grid para organizar os cards */
+    display: grid; /* grid para organizar os cards */
     grid-template-columns: 1fr 1fr;
     gap: 20px; /* Espaço igual entre os cards na horizontal e vertical */
-    max-width: 1280px; /* Limite de largura do contêiner */
-    margin: 0 auto; /* Centraliza o contêiner */
+    max-width: 1280px; /* Limite de largura do container */
+    margin: 0 auto; /* Centrao container */
     margin-top: 50px;
 }
 
@@ -12,9 +12,9 @@
 /* Estilo base dos cards */
 .card {
     background-color: #1e1e1e; /* Cor de fundo dos cards */
-    border-radius: 10px; /* Bordas arredondadas */
+    border-radius: 10px; 
     padding: 20px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
+    text-align: center; /* Centra o texto */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra suave */
     transition: all 0.3s ease; /* Transição suave para todas as propriedades */
     color: #c9d1d9; /* Cor do texto */
@@ -115,7 +115,6 @@
 
 
 
-/* Estilo ajustado para telas menores que 900px */
 @media (max-width: 1250px) {
     .card h3 {
         font-size: 20px;
@@ -134,22 +133,38 @@
     }
 }
 
-/* Estilo ajustado para telas menores que 900px */
+
 @media (max-width: 1000px) {
+    .btn {
+        padding: 8px 10px; /* Tamanho do botão */
+        font-size: 10px; /* Tamanho do texto */
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 430px) {
     .card h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .card h4 {
-        font-size: 14px;
-    }
-
-    .card p {
         font-size: 12px;
     }
 
-    .card li {
+    .card p {
         font-size: 10px;
+    }
+
+    .card li {
+        font-size: 9px;
     }
 
 
@@ -158,11 +173,3 @@
         font-size: 10px; /* Tamanho do texto */
     }
 }
-
-/* Responsividade: 1 card por linha em telas menores ou iguais a 400px */
-@media (max-width: 600px) {
-    .card-container {
-        grid-template-columns: 1fr;
-    }
-}
-

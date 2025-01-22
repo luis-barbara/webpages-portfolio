@@ -192,16 +192,16 @@ header .home-button:hover {
     margin-bottom: 20px; /* Espaço abaixo do título */
 }
 
-/* Lista do resumo (centralizada) */
+/* Lista do resumo (centro) */
 .flip-card-back ul {
     padding-left: 0;
     margin: 0;
     display: flex;
     flex-direction: column; /* Exibe os itens da lista em coluna */
-    align-items: center; /* Centraliza os itens da lista */
+    align-items: center; /* Centra os itens da lista */
     width: 100%;
     flex-grow: 1; /* Permite que a lista ocupe o espaço restante */
-    justify-content: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centra verticalmente */
 }
 
 /* Itens da lista */
@@ -214,12 +214,12 @@ header .home-button:hover {
     width: 90%; /* Garante que os itens não se estendam até a borda */
 }
 
-/* Parágrafo (movendo-o mais para baixo) */
+/* Parágrafo */
 .flip-card-back p {
-    margin-top: 30px; /* Espaço para mover o parágrafo mais para baixo */
+    margin-top: 30px; /* Espaço para mover o parágrafo para baixo */
     font-size: 16px;
     color: #c9d1d9; /* Cor suave para o parágrafo */
-    text-align: center; /* Centraliza o texto do parágrafo */
+    text-align: center; /* Centra o texto do parágrafo */
 }
 
 
@@ -302,7 +302,7 @@ footer a:hover {
 }
 
 
-/* Estilo ajustado para telas menores que 900px */
+
 @media (max-width: 900px) {
     .flip-card {
         width: 600px; /* Reduz a largura do card */
