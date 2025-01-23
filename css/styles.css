@@ -6,7 +6,8 @@ body {
 }
 
 
-main {min-height: calc(100vh - 99px);
+main {
+    min-height: calc(100vh - 99px);
 }
 
 .navbar {
@@ -26,29 +27,29 @@ main {min-height: calc(100vh - 99px);
 
 .navbar nav a {
     text-decoration: none;
-    color: #c9d1d9; 
+    color: #c9d1d9;
     font-size: 16px;
     padding: 10px 15px;
-    transition: color 0.3s ease, background-color 0.3s ease; 
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .navbar nav a:hover {
-    color: #ffffff; 
-    background-color:#9745def8; 
-    border-radius: 5px; 
+    color: #ffffff;
+    background-color: #9745def8;
+    border-radius: 5px;
 }
 
 header .home-button {
     font-size: 22px;
     text-decoration: none;
-    color: #c9d1d9; 
+    color: #c9d1d9;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 
 header .home-button:hover {
-    color: #9745def8; 
-    transform: scale(1.1); 
+    color: #9745def8;
+    transform: scale(1.1);
 }
 
 .container {
@@ -61,7 +62,7 @@ header .home-button:hover {
 
 .text {
     flex: 1;
-    text-align: left; 
+    text-align: left;
     padding-right: 20px;
     padding-left: 0;
 }
@@ -75,10 +76,10 @@ header .home-button:hover {
 }
 
 .text h1 .developer {
-    display: block; 
+    display: block;
     font-size: 100px;
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
     line-height: 1;
 }
 
@@ -94,12 +95,12 @@ header .home-button:hover {
 }
 
 .subtitles span {
-    font-size: 18px; 
-    color: #c9d1d9; 
-    text-decoration: none; 
-    transition: color 0.3s ease, transform 0.3s ease; 
-    cursor: pointer; 
-    margin: 5px; 
+    font-size: 18px;
+    color: #c9d1d9;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    margin: 5px;
 }
 
 .subtitles span:hover {
@@ -108,31 +109,45 @@ header .home-button:hover {
 
 .tech-icons {
     display: flex;
-    justify-content: center; /* Centraliza os ícones */
-    gap: 30px; /* Espaço entre os ícones */
-    margin-top: 50px; /* Espaço entre a imagem e os ícones */
-    margin-bottom: 100px; /* Espaço entre os ícones e o texto */
+    justify-content: center;
+    /* Centraliza os ícones */
+    gap: 30px;
+    /* Espaço entre os ícones */
+    margin-top: 50px;
+    /* Espaço entre a imagem e os ícones */
+    margin-bottom: 100px;
+    /* Espaço entre os ícones e o texto */
 }
 
 .tech-icons .icon {
-    font-size: 50px; /* Tamanho dos ícones */
-    color: #c9d1d9; /* Cor inicial */
-    text-decoration: none; /* Remove o sublinhado */
-    transition: transform 0.3s ease, color 0.3s ease; /* Transição suave */
+    font-size: 50px;
+    /* Tamanho dos ícones */
+    color: #c9d1d9;
+    /* Cor inicial */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    transition: transform 0.3s ease, color 0.3s ease;
+    /* Transição suave */
 }
 
 .tech-icons .icon:hover {
-    color: #9745def8; /* Cor no hover */
-    transform: scale(1.2); /* Aumenta o ícone no hover */
+    color: #9745def8;
+    /* Cor no hover */
+    transform: scale(1.2);
+    /* Aumenta o ícone no hover */
 }
 
 
 /* Estilo para o Flip Card */
 .flip-card {
-    width: 850px; /* Tamanho fixo do card */
-    height: 550px; /* Altura do card */
-    perspective: 1000px; /* Efeito de perspectiva 3D */
-    margin: 0 auto; /* Centraliza o card na página */
+    width: 850px;
+    /* Tamanho fixo do card */
+    height: 550px;
+    /* Altura do card */
+    perspective: 1000px;
+    /* Efeito de perspectiva 3D */
+    margin: 0 auto;
+    /* Centraliza o card na página */
 }
 
 /* Estilo para o interior do Flip Card */
@@ -140,8 +155,10 @@ header .home-button:hover {
     position: relative;
     width: 100%;
     height: 100%;
-    transform-style: preserve-3d; /* Mantém o efeito 3D ao girar */
-    transition: transform 0.6s; /* Transição suave no giro */
+    transform-style: preserve-3d;
+    /* Mantém o efeito 3D ao girar */
+    transition: transform 0.6s;
+    /* Transição suave no giro */
 }
 
 /* Frente do card (onde está a imagem) */
@@ -149,47 +166,64 @@ header .home-button:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Oculta o verso quando o card vira */
+    backface-visibility: hidden;
+    /* Oculta o verso quando o card vira */
 }
 
 .flip-card-front .img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que a imagem ocupe o espaço sem distorcer */
-    border-radius: 15px; /* Mantém o arredondamento nas bordas da imagem */
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Sombra na imagem */
+    object-fit: cover;
+    /* Garante que a imagem ocupe o espaço sem distorcer */
+    border-radius: 15px;
+    /* Mantém o arredondamento nas bordas da imagem */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    /* Sombra na imagem */
 }
 
 /* Verso do card (onde fica o conteúdo de texto) */
 .flip-card-back {
     position: absolute;
     width: 100%;
-    height: 100%; /* Definir altura igual à frente */
-    background-color:  #1e1e1e; /* Cor de fundo do verso */
+    height: 100%;
+    /* Definir altura igual à frente */
+    background-color: #1e1e1e;
+    /* Cor de fundo do verso */
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Alinha o conteúdo no topo */
-    align-items: center; /* Centraliza o conteúdo no eixo horizontal */
-    backface-visibility: hidden; /* Oculta a frente quando vira */
-    transform: rotateY(180deg); /* Gira 180 graus */
-    border-radius: 15px; /* Mantém as bordas arredondadas do verso */
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Sombra no verso */
+    justify-content: flex-start;
+    /* Alinha o conteúdo no topo */
+    align-items: center;
+    /* Centraliza o conteúdo no eixo horizontal */
+    backface-visibility: hidden;
+    /* Oculta a frente quando vira */
+    transform: rotateY(180deg);
+    /* Gira 180 graus */
+    border-radius: 15px;
+    /* Mantém as bordas arredondadas do verso */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    /* Sombra no verso */
     padding: 20px;
-    box-sizing: border-box; /* Inclui o padding no cálculo da altura */
+    box-sizing: border-box;
+    /* Inclui o padding no cálculo da altura */
 }
 
 /* Efeito de hover: faz o card girar */
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg); /* Gira o card no eixo Y */
+    transform: rotateY(180deg);
+    /* Gira o card no eixo Y */
 }
 
 /* Título (h2) no topo */
 .flip-card-back h2 {
     font-size: 24px;
-    margin-top: 20px; /* Espaço no topo */
-    text-align: center; /* Centraliza o título */
-    margin-bottom: 20px; /* Espaço abaixo do título */
+    margin-top: 20px;
+    /* Espaço no topo */
+    text-align: center;
+    /* Centraliza o título */
+    margin-bottom: 20px;
+    /* Espaço abaixo do título */
 }
 
 /* Lista do resumo (centro) */
@@ -197,55 +231,66 @@ header .home-button:hover {
     padding-left: 0;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Exibe os itens da lista em coluna */
-    align-items: center; /* Centra os itens da lista */
+    flex-direction: column;
+    /* Exibe os itens da lista em coluna */
+    align-items: center;
+    /* Centra os itens da lista */
     width: 100%;
-    flex-grow: 1; /* Permite que a lista ocupe o espaço restante */
-    justify-content: center; /* Centra verticalmente */
+    flex-grow: 1;
+    /* Permite que a lista ocupe o espaço restante */
+    justify-content: center;
+    /* Centra verticalmente */
 }
 
 /* Itens da lista */
 .flip-card-back li {
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 10px; /* Espaçamento entre os itens */
-    color: #c9d1d9; /* Cor suave para o texto */
-    text-align: left; /* Alinha o texto dos itens à esquerda */
-    width: 90%; /* Garante que os itens não se estendam até a borda */
+    margin-bottom: 10px;
+    /* Espaçamento entre os itens */
+    color: #c9d1d9;
+    /* Cor suave para o texto */
+    text-align: left;
+    /* Alinha o texto dos itens à esquerda */
+    width: 90%;
+    /* Garante que os itens não se estendam até a borda */
 }
 
 /* Parágrafo */
 .flip-card-back p {
-    margin-top: 30px; /* Espaço para mover o parágrafo para baixo */
+    margin-top: 30px;
+    /* Espaço para mover o parágrafo para baixo */
     font-size: 16px;
-    color: #c9d1d9; /* Cor suave para o parágrafo */
-    text-align: center; /* Centra o texto do parágrafo */
+    color: #c9d1d9;
+    /* Cor suave para o parágrafo */
+    text-align: center;
+    /* Centra o texto do parágrafo */
 }
 
 
 .social-icons {
     display: flex;
-    justify-content: center; 
-    gap: 30px; 
-    margin-bottom: 50px; 
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
 }
 
 .social-icons .icon {
-    font-size: 50px; 
-    color: #c9d1d9; 
-    text-decoration: none; 
-    display: inline-block; 
-    transition: transform 0.3s ease, color 0.3s ease; 
+    font-size: 50px;
+    color: #c9d1d9;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-icons .icon:hover {
-    color: #9745def8; 
-    transform: scale(1.2); 
+    color: #9745def8;
+    transform: scale(1.2);
 }
 
 footer {
-    flex-shrink: 0;  
-    color: #c9d1d9;  
+    flex-shrink: 0;
+    color: #c9d1d9;
     text-align: center;
     padding: 20px 0;
 }
@@ -253,51 +298,65 @@ footer {
 footer p {
     margin: 0;
     font-size: 14px;
-    color: #c9d1d9; 
+    color: #c9d1d9;
 }
 
 footer a {
     text-decoration: none;
-    color: #0d6efd; 
+    color: #0d6efd;
     font-size: 14px;
     font-weight: bold;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #9745def8; 
+    color: #9745def8;
 }
 
 
 /* Estilo para o container de partículas no footer */
 .bottom-particles {
-    position: relative; /* Permite posicionamento das partículas */
+    position: relative;
+    /* Permite posicionamento das partículas */
     width: 100%;
-    overflow: hidden; /* Esconde partículas que saem do container */
+    overflow: hidden;
+    /* Esconde partículas que saem do container */
 }
 
 .bubble {
     position: absolute;
-    bottom: -1rem; /* Começa abaixo do container */
-    width: 1rem; /* Tamanho da bolha */
+    bottom: -1rem;
+    /* Começa abaixo do container */
+    width: 1rem;
+    /* Tamanho da bolha */
     height: 1rem;
-    background-color: rgba(111, 109, 109, 0.5); /* Bolhas semi-transparentes */
-    border-radius: 50%; /* Formato circular */
-    animation: bubbleAnimation 10s infinite; /* Animação infinita */
+    background-color: rgba(111, 109, 109, 0.5);
+    /* Bolhas semi-transparentes */
+    border-radius: 50%;
+    /* Formato circular */
+    animation: bubbleAnimation 10s infinite;
+    /* Animação infinita */
 }
-    
+
 /* Animação das bolhas */
 @keyframes bubbleAnimation {
     0% {
-    transform: translateY(0) scale(1); /* Começa na posição inicial */
-    opacity: 0; /* Invisível no início */
+        transform: translateY(0) scale(1);
+        /* Começa na posição inicial */
+        opacity: 0;
+        /* Invisível no início */
     }
+
     20% {
-    opacity: 1; /* Torna-se visível */
+        opacity: 1;
+        /* Torna-se visível */
     }
+
     100% {
-    transform: translateY(-200px) scale(0.5); /* Sobe e encolhe */
-    opacity: 0; /* Fica invisível no final */
+        transform: translateY(-200px) scale(0.5);
+        /* Sobe e encolhe */
+        opacity: 0;
+        /* Fica invisível no final */
     }
 }
 
@@ -305,57 +364,77 @@ footer a:hover {
 
 @media (max-width: 900px) {
     .flip-card {
-        width: 600px; /* Reduz a largura do card */
-        height: 390px; /* Reduz a altura do card */
+        width: 600px;
+        /* Reduz a largura do card */
+        height: 390px;
+        /* Reduz a altura do card */
     }
 
     .flip-card-back {
-        padding: 15px; /* Reduz o padding */
+        padding: 15px;
+        /* Reduz o padding */
     }
 
     .flip-card-back h2 {
-        font-size: 20px; /* Reduz o tamanho da fonte do título */
-        margin-top: 15px; /* Ajusta o espaçamento superior */
+        font-size: 20px;
+        /* Reduz o tamanho da fonte do título */
+        margin-top: 15px;
+        /* Ajusta o espaçamento superior */
     }
 
 
     .flip-card-back li {
-        font-size: 16px; /* Reduz o tamanho da fonte dos itens da lista */
-        line-height: 1.4; /* Ajusta o espaçamento entre linhas */
-        margin-bottom: 8px; /* Reduz o espaçamento entre os itens */
+        font-size: 16px;
+        /* Reduz o tamanho da fonte dos itens da lista */
+        line-height: 1.4;
+        /* Ajusta o espaçamento entre linhas */
+        margin-bottom: 8px;
+        /* Reduz o espaçamento entre os itens */
     }
 
     .flip-card-back p {
-        font-size: 14px; /* Reduz o tamanho da fonte do parágrafo */
-        margin-top: 20px; /* Ajusta o espaçamento superior */
+        font-size: 14px;
+        /* Reduz o tamanho da fonte do parágrafo */
+        margin-top: 20px;
+        /* Ajusta o espaçamento superior */
     }
 }
 
 
 @media (max-width: 650px) {
     .flip-card {
-        width: 400px; /* Reduz ainda mais a largura do card */
-        height: 260px; /* Reduz a altura do card */
+        width: 400px;
+        /* Reduz ainda mais a largura do card */
+        height: 260px;
+        /* Reduz a altura do card */
     }
 
     .flip-card-back {
-        padding: 10px; /* Reduz ainda mais o padding */
+        padding: 10px;
+        /* Reduz ainda mais o padding */
     }
 
     .flip-card-back h2 {
-        font-size: 14px; /* Diminui o tamanho da fonte do título */
-        margin-top: 8px; /* Reduz o espaçamento superior */
+        font-size: 14px;
+        /* Diminui o tamanho da fonte do título */
+        margin-top: 8px;
+        /* Reduz o espaçamento superior */
     }
 
     .flip-card-back li {
-        font-size: 10px; /* Diminui o tamanho da fonte dos itens da lista */
-        line-height: 1.2; /* Ajusta o espaçamento entre linhas */
-        margin-bottom: 5px; /* Reduz o espaçamento entre os itens */
+        font-size: 10px;
+        /* Diminui o tamanho da fonte dos itens da lista */
+        line-height: 1.2;
+        /* Ajusta o espaçamento entre linhas */
+        margin-bottom: 5px;
+        /* Reduz o espaçamento entre os itens */
     }
 
     .flip-card-back p {
-        font-size: 11px; /* Diminui o tamanho da fonte do parágrafo */
-        margin-top: 12px; /* Ajusta o espaçamento superior */
+        font-size: 11px;
+        /* Diminui o tamanho da fonte do parágrafo */
+        margin-top: 12px;
+        /* Ajusta o espaçamento superior */
     }
 
 
@@ -370,13 +449,14 @@ footer a:hover {
     .subtitles {
         font-size: 14px;
     }
-    
+
     .subtitles span {
-        font-size: 16px; 
+        font-size: 16px;
     }
 
     .tech-icons .icon {
-        font-size: 30px; /* Tamanho dos ícones */
+        font-size: 30px;
+        /* Tamanho dos ícones */
     }
 
     .social-icons .icon {
@@ -386,7 +466,7 @@ footer a:hover {
     footer p {
         font-size: 10px;
     }
-    
+
     footer a {
         font-size: 10px;
     }
@@ -395,28 +475,38 @@ footer a:hover {
 
 @media (max-width: 500px) {
     .flip-card {
-        width: 300px; /* Reduz ainda mais a largura do card */
-        height: 195px; /* Reduz a altura do card */
+        width: 300px;
+        /* Reduz ainda mais a largura do card */
+        height: 195px;
+        /* Reduz a altura do card */
     }
 
     .flip-card-back {
-        padding: 4px; /* Reduz ainda mais o padding */
+        padding: 4px;
+        /* Reduz ainda mais o padding */
     }
 
     .flip-card-back h2 {
-        font-size: 8px; /* Diminui o tamanho da fonte do título */
-        margin-top: 4px; /* Reduz o espaçamento superior */
+        font-size: 8px;
+        /* Diminui o tamanho da fonte do título */
+        margin-top: 4px;
+        /* Reduz o espaçamento superior */
     }
 
     .flip-card-back li {
-        font-size: 8px; /* Diminui o tamanho da fonte dos itens da lista */
-        line-height: 1.2; /* Ajusta o espaçamento entre linhas */
-        margin-bottom: 4px; /* Reduz o espaçamento entre os itens */
+        font-size: 8px;
+        /* Diminui o tamanho da fonte dos itens da lista */
+        line-height: 1.2;
+        /* Ajusta o espaçamento entre linhas */
+        margin-bottom: 4px;
+        /* Reduz o espaçamento entre os itens */
     }
 
     .flip-card-back p {
-        font-size: 8px; /* Diminui o tamanho da fonte do parágrafo */
-        margin-top: 4px; /* Ajusta o espaçamento superior */
+        font-size: 8px;
+        /* Diminui o tamanho da fonte do parágrafo */
+        margin-top: 4px;
+        /* Ajusta o espaçamento superior */
     }
 
 
@@ -431,13 +521,14 @@ footer a:hover {
     .subtitles {
         font-size: 10px;
     }
-    
+
     .subtitles span {
         font-size: 10px;
     }
 
     .tech-icons .icon {
-        font-size: 30px; /* Tamanho dos ícones */
+        font-size: 30px;
+        /* Tamanho dos ícones */
     }
 
     .social-icons .icon {
@@ -447,7 +538,7 @@ footer a:hover {
     footer p {
         font-size: 10px;
     }
-    
+
     footer a {
         font-size: 10px;
     }
@@ -455,20 +546,20 @@ footer a:hover {
     .navbar nav {
         font-size: 10px;
     }
-    
+
     .navbar nav a {
         font-size: 10px;
     }
-    
+
     header .home-button {
         font-size: 12px;
     }
 
-    
+
     footer p {
         font-size: 8px;
     }
-    
+
     footer a {
         font-size: 8px;
     }
@@ -484,13 +575,14 @@ footer a:hover {
     .subtitles {
         font-size: 10px;
     }
-    
+
     .subtitles span {
         font-size: 10px;
     }
 
     .tech-icons .icon {
-        font-size: 20px; /* Tamanho dos ícones */
+        font-size: 20px;
+        /* Tamanho dos ícones */
     }
 
     .social-icons .icon {
@@ -501,7 +593,7 @@ footer a:hover {
         gap: 0px;
     }
 
-    .subtitles span { 
+    .subtitles span {
         margin: 0px;
     }
 

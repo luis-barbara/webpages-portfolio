@@ -1,115 +1,163 @@
 /* Estilo base para o contaier de cards */
 .card-container {
-    display: grid; /* grid para organizar os cards */
+    display: grid;
+    /* grid para organizar os cards */
     grid-template-columns: 1fr 1fr;
-    gap: 20px; /* Espaço igual entre os cards na horizontal e vertical */
-    max-width: 1280px; /* Limite de largura do container */
-    margin: 0 auto; /* Centrao container */
+    gap: 20px;
+    /* Espaço igual entre os cards na horizontal e vertical */
+    max-width: 1280px;
+    /* Limite de largura do container */
+    margin: 0 auto;
+    /* Centrao container */
     margin-top: 50px;
 }
 
 
 /* Estilo base dos cards */
 .card {
-    background-color: #1e1e1e; /* Cor de fundo dos cards */
-    border-radius: 10px; 
-    padding: 20px; /* Espaçamento interno */
-    text-align: center; /* Centra o texto */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra suave */
-    transition: all 0.3s ease; /* Transição suave para todas as propriedades */
-    color: #c9d1d9; /* Cor do texto */
+    background-color: #1e1e1e;
+    /* Cor de fundo dos cards */
+    border-radius: 10px;
+    padding: 20px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Centra o texto */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    transition: all 0.3s ease;
+    /* Transição suave para todas as propriedades */
+    color: #c9d1d9;
+    /* Cor do texto */
     height: 350px;
     display: flex;
-    flex-direction: column; /* Organiza os itens do card em coluna */
-    justify-content: space-between; /* Distribui o conteúdo entre o topo e o fundo */
+    flex-direction: column;
+    /* Organiza os itens do card em coluna */
+    justify-content: space-between;
+    /* Distribui o conteúdo entre o topo e o fundo */
 }
 
 /* Efeito hover nos cards */
 .card:hover {
-    background-color: #9745def8; /* Cor de fundo ao passar o mouse */
-    color: white; /* Cor do texto ao passar o mouse */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta a sombra */
-    transform: translateY(-5px); /* Move o card para cima */
-    cursor: pointer; 
+    background-color: #9745def8;
+    /* Cor de fundo ao passar o mouse */
+    color: white;
+    /* Cor do texto ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Aumenta a sombra */
+    transform: translateY(-5px);
+    /* Move o card para cima */
+    cursor: pointer;
 }
 
 /* Efeito de hover para os títulos (h3) dentro do card */
 .card h3 {
-    font-size: 22px; /* Tamanho do título */
-    margin-top: 5px; /* Espaçamento inferior */
-    transition: color 0.3s ease; /* Transição suave para a cor */
+    font-size: 22px;
+    /* Tamanho do título */
+    margin-top: 5px;
+    /* Espaçamento inferior */
+    transition: color 0.3s ease;
+    /* Transição suave para a cor */
     color: #0d6efd;
 }
 
 
 .card h4 {
     text-align: left;
-    margin: 0; /* Remove margens adicionais */
-    padding-left: 20px; /* Ajusta o padding da borda do card */
+    margin: 0;
+    /* Remove margens adicionais */
+    padding-left: 20px;
+    /* Ajusta o padding da borda do card */
     padding-right: 20px;
 }
 
 
 /* Efeito de hover para o título */
 .card:hover h3 {
-    color: #ffffff; /* Cor do título no hover */
-    transform: scale(1.05); /* Aumenta levemente o título */
+    color: #ffffff;
+    /* Cor do título no hover */
+    transform: scale(1.05);
+    /* Aumenta levemente o título */
 }
 
 /* Efeito para os parágrafos dentro do card */
 .card p {
-    font-size: 14px; /* Tamanho do texto */
-    margin: 10px 0; /* Margem superior e inferior */
-    transition: color 0.3s ease; /* Transição suave para a cor */
+    font-size: 14px;
+    /* Tamanho do texto */
+    margin: 10px 0;
+    /* Margem superior e inferior */
+    transition: color 0.3s ease;
+    /* Transição suave para a cor */
 }
 
 
 .card ul {
     padding-top: 15px;
-    list-style: disc; /* Mantém o estilo da lista */
-    margin: 0; /* Remove margens extras */
-    padding-left: 20px; /* Alinha com o título h4 */
-    padding-right: 20px; /* Garante alinhamento consistente */
+    list-style: disc;
+    /* Mantém o estilo da lista */
+    margin: 0;
+    /* Remove margens extras */
+    padding-left: 20px;
+    /* Alinha com o título h4 */
+    padding-right: 20px;
+    /* Garante alinhamento consistente */
 }
 
 .card li {
     font-size: 12px;
     line-height: 1.6;
-    margin-bottom: 10px; /* Espaçamento entre os itens */
-    text-align: left; /* Mantém o texto alinhado à esquerda */
+    margin-bottom: 10px;
+    /* Espaçamento entre os itens */
+    text-align: left;
+    /* Mantém o texto alinhado à esquerda */
 }
 
 
 /* Efeito de hover para os parágrafos */
 .card:hover p {
-    color: #f0f0f0; /* Muda a cor do texto */
+    color: #f0f0f0;
+    /* Muda a cor do texto */
 }
 
 
 /* Estilo do botão */
 .btn {
     display: inline-block;
-    padding: 10px 15px; /* Tamanho do botão */
-    font-size: 14px; /* Tamanho do texto */
-    font-weight: bold; /* Texto em negrito */
-    color: white; /* Cor do texto */
-    background-color: #0d6efd; 
-    border-radius: 5px; /* Bordas arredondadas */
-    text-decoration: none; /* Remove sublinhado */
-    transition: all 0.3s ease; /* Transição suave para hover */
-    text-align: center; /* Centraliza o texto */
-    margin-top: auto; /* Faz com que o botão vá para o final do card */
-    margin-bottom: 5px; /* Garante 5px de distância da base do card */
-    width: auto; /* Faz o botão ter largura automática */
-    align-self: center; /* Centraliza o botão dentro do card */
+    padding: 10px 15px;
+    /* Tamanho do botão */
+    font-size: 14px;
+    /* Tamanho do texto */
+    font-weight: bold;
+    /* Texto em negrito */
+    color: white;
+    /* Cor do texto */
+    background-color: #0d6efd;
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    text-decoration: none;
+    /* Remove sublinhado */
+    transition: all 0.3s ease;
+    /* Transição suave para hover */
+    text-align: center;
+    /* Centraliza o texto */
+    margin-top: auto;
+    /* Faz com que o botão vá para o final do card */
+    margin-bottom: 5px;
+    /* Garante 5px de distância da base do card */
+    width: auto;
+    /* Faz o botão ter largura automática */
+    align-self: center;
+    /* Centraliza o botão dentro do card */
 }
 
 
 /* Efeito hover no botão */
 .btn:hover {
-    cursor: pointer; /* Muda o cursor para indicar clicável */
-    font-weight: bold; /* Texto em negrito */
-    color: white; /* Cor do texto */
+    cursor: pointer;
+    /* Muda o cursor para indicar clicável */
+    font-weight: bold;
+    /* Texto em negrito */
+    color: white;
+    /* Cor do texto */
     background-color: #1e1e1e
 }
 
@@ -136,8 +184,10 @@
 
 @media (max-width: 1000px) {
     .btn {
-        padding: 8px 10px; /* Tamanho do botão */
-        font-size: 10px; /* Tamanho do texto */
+        padding: 8px 10px;
+        /* Tamanho do botão */
+        font-size: 10px;
+        /* Tamanho do texto */
     }
 }
 
@@ -169,7 +219,9 @@
 
 
     .btn {
-        padding: 8px 10px; /* Tamanho do botão */
-        font-size: 10px; /* Tamanho do texto */
+        padding: 8px 10px;
+        /* Tamanho do botão */
+        font-size: 10px;
+        /* Tamanho do texto */
     }
 }
