@@ -300,3 +300,27 @@ footer a:hover {
     opacity: 0; /* Fica invisível no final */
     }
 }
+
+
+@media (max-width: 750px) {
+    .text h1 {
+        font-size: 80px; /* Ajuste o tamanho da fonte para telas pequenas */
+    }
+
+    .text h1 .developer {
+        font-size: 80px; /* Ajuste também a parte .developer */
+    }
+}
+
+
+@media (max-width: 550px) {
+    .text h1 {
+        font-size: 60px; /* Ajuste o tamanho da fonte para telas pequenas */
+    }
+
+    .text h1 .developer {
+        font-size: 60px; /* Ajuste também a parte .developer */
+    }
+}
+
+
