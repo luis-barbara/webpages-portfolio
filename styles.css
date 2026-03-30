@@ -34,7 +34,7 @@ main {min-height: calc(100vh - 99px);
 
 .navbar nav a:hover {
     color: #ffffff; 
-    background-color:#9745def8; 
+    background-color: #000000; 
     border-radius: 5px; 
 }
 
